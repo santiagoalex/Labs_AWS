@@ -301,3 +301,64 @@ Ahora otro tema importante
 ## 4 Eliminar
 
 Como es un proceso que puede ser costoso y esto es con propositos educativos, vamos a eliminar la configuracion
+
+
+Vamos a darle exit a nuestra consola y luego en los servicios de EC2 vamos a clickear en terminar, como es con fines educativos no nos importa que se elimine
+
+![alt text](image-43.png)
+
+
+**Importante:** Validar correctamente que no este corriendo
+
+
+Luego en la consola navegamos a nuestra VPC
+
+Vamos primero a nuestras tablas de rutas 
+
+
+![alt text](image-44.png)
+
+
+Seleccionamos nuestra tabla privada
+![alt text](image-45.png)
+
+vamos a sus asociaciones y las editamos
+
+
+![alt text](image-46.png)
+
+
+Luego desclickeamos la que tiene asociada y guardamos
+
+
+![alt text](image-47.png)
+
+
+
+Ahora si eliminamos nuestra tabla de rutas
+
+
+![alt text](image-48.png)
+
+
+Repetimos el proceso para la tabla de red publica
+![alt text](image-49.png)
+
+Vamos a sub redes la seleccionamos(una a la vez)  y damos click en eliminar, refrescamos  y esperamos que se haya eliminado
+
+![alt text](image-50.png)
+
+Ahora vamos a eliminar nuestro internet gateway,
+
+![alt text](image-51.png)
+
+Vamos a nuestro gateway, eliminamos su conexion con la vpc y luego lo eliminamos
+
+Por ultimo eliminamos nuestra vpc
+
+
+![alt text](image-52.png)
+
+
+
+Con esto hemos limpiado todo y eliminado nuestros recursos!
