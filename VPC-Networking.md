@@ -120,3 +120,159 @@ De forma analoga crearemos la otra subred
 Deberiamos ver una pantalla como la siguiente
 
 ![Creacion subred exitosa](image-16.png)
+
+
+### 3.4 Creacion de tabla de rutas
+
+
+Iremos a nuestra creacion de tablas de rutas en el panel derecho y crearemos una nueba tabla de rutas
+
+
+![Tabla de rutas panel](image-17.png)
+
+
+Crearemos nuestra tabla de rutas para nuestra red publica con el nombre *RT-vpc-lab-public*
+
+![Creacion tabla de rutas publica](image-18.png)
+
+deberiamos ver la siguiente pantalla
+
+![alt text](image-19.png)
+
+
+
+Pero con eso no basta, por que es nuestra red publica, necesita acceso a internet, entonces vamos a editarla
+
+Vamos a nuestra tabla de rutas y seleccionamos editar rutas
+
+
+![alt text](image-20.png)
+
+
+
+
+1. Agregamos nuestra destinacion  *0.0.0.0/0* que significa que tiene acceso a internet y puede ser accedida desde internet
+2. Escogemos el objetivo, con internet gateway que nosotros creamos
+3. Guardamos los cambios
+
+
+![alt text](image-21.png)
+
+
+Deberiamos ver una pantalla como la siguiente, con las dos rutas, la que agregamos y la por defecto
+
+
+![alt text](image-22.png)
+
+
+ahora tenemos que asignar nuestra route table a la red publica
+
+
+![alt text](image-23.png)
+
+
+1. Navegamos hacia asociaciones de subredes
+2. Clickeamos en editar subredes
+
+
+![alt text](image-24.png)
+
+
+Seleccionamos nuestra red publica y guardamos, deberiamos ver una pantalla como la siguiente
+
+![alt text](image-25.png)
+
+
+
+
+Ahora tenemos que crear otra tabla de rutas, para nuestra red privada:
+
+Vamos a la navegacion de nuestra tablas de rutas y vamos a repetir el proceso de creacion de tablas de rutas
+con el nombre *RT-vpc-lab-private*
+
+![alt text](image-26.png)
+
+
+debemos ver un mensaje como el siguiente
+
+![alt text](image-27.png)
+
+
+Ahora lo debemos asociar con nuestra subred privada
+
+![alt text](image-28.png)
+
+Y asociamos la tabla con nuestra red
+
+![alt text](image-29.png)
+
+Deberiamos ver un mensaje como el siguiente
+![alt text](image-30.png)
+
+
+
+ahora si vamos a crear nuestros recursos los EC2
+
+### 3.5 Creacion EC2
+
+
+Vamos a buscar nuestra consola de navegacion e iremos a EC2
+
+![alt text](image-31.png)
+
+
+Lanzaremos una instancia
+
+![alt text](image-32.png)
+
+
+ahora haremos lo siguiente en varios pasos:
+
+![alt text](image-33.png)
+
+
+1. Le colocaremos un nombre a nuestra instancia *ec2-vpc-lab-public*
+2. escogeremos ubunto
+3. tomamos la capa gratuita 
+
+
+Ahora navegaremos hacia los pares de claves
+
+
+Vamos a crear los pares de claves con el nombre *PK-vpc-lab*
+
+![alt text](image-34.png)
+
+
+La clave privada se guardara en tu pc y la publica se asociara con el ec2
+
+
+Luego vamso a configuraciones de red y vamos a editarlo
+
+
+![alt text](image-36.png)
+
+
+1. Vamos a escoger nuestro vpc
+2. Seleccionamos nuestra red publica
+3. Habilitamos un acceso de ip publico(por que es la publica)
+4. Creamos un grupo de seguridad nuevo
+5. Colocamos el nombre en le grupo de seguridad *SG-ec2-lab-vpc*
+6. Establecemos la descripcion del grupo de seguridad *SG-ec2-lab-vpc*
+
+
+
+Luego cambiamos la memoria y lanzamos la instancia
+
+![alt text](image-37.png)
+
+
+deberiamos ver una pantalla como la siguiente
+
+![alt text](image-38.png)
+
+Ahora necesitamos comunicacion SSH con la instancia
+
+![alt text](image-39.png)
+
+Vamos a nuestra instancia corriendo y en la seccion de network copiamos la direccion publica
