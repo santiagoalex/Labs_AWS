@@ -1,4 +1,4 @@
-# Como motar tu VPC con tus recursos
+# Como montar tu  propia VPC para tus recursos
 
 ## 1. Arquitectura
 ![VPC-subnets drawio](https://github.com/user-attachments/assets/b2b0180f-65b3-4951-b75a-3f04fe6ec6ab)
