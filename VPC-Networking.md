@@ -276,3 +276,28 @@ Ahora necesitamos comunicacion SSH con la instancia
 ![alt text](image-39.png)
 
 Vamos a nuestra instancia corriendo y en la seccion de network copiamos la direccion publica
+
+
+Ahora vamos a probar la conexion, clickeamos en conectar
+![alt text](image-40.png)
+
+
+y vamos a la pestaña cliente SSH, donde veremos las instrucciones, esto nos permitira concetarnos con ssh con nuestra clave privada
+
+![alt text](image-41.png)
+
+
+
+siguiendo los pasos, podremos ver lo siguiente
+
+
+![alt text](image-42.png)
+
+
+Con exito nos conectamos al sitio!
+
+Ahora otro tema importante
+
+## 4 Eliminar
+
+Como es un proceso que puede ser costoso y esto es con propositos educativos, vamos a eliminar la configuracion
