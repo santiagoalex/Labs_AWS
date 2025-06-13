@@ -38,7 +38,7 @@ Luego haremos 5 pasos
 
 1. Seleccionamos solo vpc
 2. Colocamos una etiqueta a nuestra VPC
-3. Colocaremos el rango de ips para nuestra VPC
+3. Colocaremos el rango de ips para nuestra VPC *12.0.0.16*
 4. Agregamos la etiqueta de creador (opcional)
 5. Crearemos la VPC
 
@@ -83,3 +83,40 @@ Luego deberiamos poder ver el proceso de la gateway atada correctamente
 ![gateway atada](image-10.png)
 
 ### 3.3 Creacion de sub redes
+
+Vamos a nuestro panel de VPC  y navegaremos a sub redes
+
+
+![Panel generla vpc](image-11.png)
+
+![Navegacion a subredes](image-12.png)
+
+
+Tenemos subredes por defecto añadadidas por AWS **No usaremos esas subredes** , crearemos la nuestra propia
+
+![Creacion VPC](image-13.png)
+
+Ahora realizaremos varios pasos
+
+![alt text](image-14.png)
+
+1. Escogeremos nestra vpc
+2. Le colocaremos el nombre a nuestra subred *vpc-lab-public-2a*
+3. Estableceremos la zona de disponibilidad
+4. Estableceremos el rango de ips de nuestra subred *12.0.1.0/24*
+5. Crearemos otra sub red
+
+
+De forma analoga crearemos la otra subred
+
+
+![Creacion segunda subred](image-15.png)
+
+1. Le colocaremos el nombre a nuestra subred *vpc-lab-private-2a*
+2. Estableceremos la zona de disponibilidad
+3. Estableceremos el rango de ips de nuestra subred *12.0.3.0/24*
+
+
+Deberiamos ver una pantalla como la siguiente
+
+![Creacion subred exitosa](image-16.png)
