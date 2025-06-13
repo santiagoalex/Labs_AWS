@@ -21,6 +21,21 @@ Vamos a tener dos recursos de computo (ec2) establecidos en dos redes independie
 
 
 ### 1. Crearemos nuestra  VPC
+    
+Vamos al buscador y escribiremos vpc, y navegaremos a este servicio
+![Buscador consola aws](imagen.png)
 
-Vamos al buscador y escribiremos vpc
-![alt text](imagen.png)
+Nota: _Por defecto siempre exite una vpc que es la que se crea cuando creas tu cuenta en AWS_
+
+Luego daremos click en crear el servicio
+![Servicio VPC](image.png)
+
+
+Luego haremos 5 pasos
+![Pasos creacion nueva vpc](image-2.png)
+
+1. Seleccionamos solo vpc
+2. Colocamos una etiqueta a nuestra VPC
+3. Colocaremos el rango de ips para nuestra VPC
+4. Agregamos la etiqueta de creador (opcional)
+5. Crearemos la VPC
