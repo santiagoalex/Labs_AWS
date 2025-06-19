@@ -220,4 +220,11 @@ Vamos a registros y grupos de registros (logs groups)
 ![alt text](image-14.png)
 
 Aca podemos ver el error que tenemos
+
+
+Ahora en cuanto a permisos debemos ir a nuestro lambda
+
+aca podemos ver su rol
+
+#### imagen rol  lambda
 ## 4. Eliminación
