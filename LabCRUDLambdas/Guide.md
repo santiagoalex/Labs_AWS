@@ -343,3 +343,10 @@ Y buala tenemos nuestra primera operacion en nuestra base de datos!
 
 ![image](https://github.com/user-attachments/assets/c7b1c6a3-d899-4f8e-be3d-b6f28060de2d)
 
+### 4.5 (Opcional) Eliminamos las politicas
+
+Es opcional por que las politicas de IAM no tienen costo
+
+![image](https://github.com/user-attachments/assets/833aa9e1-972d-4341-8325-b2a21ad89b90)
+
+
