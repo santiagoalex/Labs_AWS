@@ -308,6 +308,9 @@ ahora probamos en postman
 
 Vamos a nuestra tabla
 
+![image](https://github.com/user-attachments/assets/ff2d9e4c-c1fb-4792-99ef-eaf34ac6268a)
+
+
 ![alt text](image-40.png)
 
 
