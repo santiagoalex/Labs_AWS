@@ -251,19 +251,66 @@ Vamos a escoger el servicio y los permisos y donde aplicarian y por ultimo vamos
 
 En ARN nos traeremos el ARN de nuestra tabla en dynamo (navegamos a ella en otra pestaña) y los campos se ajustaran solos
 
+![alt text](image-32.png)
 
 ![alt text](image-33.png)
+
 
 ![alt text](image-34.png)
 
 
 
 
+Le damos en agregar y luego en el panel del permiso clickeamos siguiente
+
+![alt text](image-35.png)
+
+
+Ahora colocaremos un nombre a la policy *CreateBookPolicy* y  crearemos el book policy
+
+![alt text](image-36.png)
+
+
+Luego la ligaremos a nuestro policy , buscaremos, colocamos si nombre, la agregamos 
+
+
+![alt text](image-37.png)
+
+
+![alt text](image-38.png)
+
+ahora probamos en postman
 
 
 
+
+![alt text](image-39.png)
+
+
+Vamos a nuestra tabla
+
+![alt text](image-40.png)
+
+
+Y buala tenemos nuestra primera operacion en nuestra base de datos!
 
 
 
 
 ## 4. Eliminación
+
+
+### 4.1 Tabla
+![alt text](image-41.png)
+### 4.2 Lambda
+![alt text](image-42.png)
+
+
+### 4.3 API Gateway
+
+![alt text](image-43.png)
+
+
+### 4.4 CloudWatch Log groups
+
+![alt text](image-44.png)
