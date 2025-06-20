@@ -21,6 +21,11 @@ Vamos a tener una aproximacion a una base de datos basica usando aws lambda empe
 
 Vamos a cancelar todos nuestros servicios entonces virtualmente no tendra costo.
 
+
+Pero en capa gratuita costaria esto
+
+https://calculator.aws/#/estimate?id=3726ecde6980b5db44627efb75d9394d4dbd7d64
+
 ## 3. Proceso
 
 ### 3.1 Creacion de lamnda
