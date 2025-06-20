@@ -64,36 +64,37 @@ Vamos a seleccionar API http
 
 
 
-Ahora vamos a escoger la integracion, que va a ser con nuestra lambda por eso seleccionamos lambda y escogemos la nuestra
+Vamos a colocar nuestra API gateway con una integracion, que va a ser con nuestra lambda por eso seleccionamos lambda y escogemos la nuestra, le colocamos un nombre y vamos a siguiente
 
+![alt text](image-15.png)
 
-#### Imagen opciones lamnda
 
 Luego escogemos la accion  que sera **post** y  la ruta que sera la siguiente */books*, y escogemos en target a nuestra lambda creada
 
-#### imagen opciones lamnda 2
+![alt text](image-16.png)
 
 
 Dejamos los stages en **$default**
 
-### imagen default stage
+![alt text](image-17.png)
 
 Y luego le damos click a crear
 
+![alt text](image-18.png)
 
 Ahora podemos ver nuestra API http con  su url de invocacion y sus rutas definidas tambien
 
 
-### imagen url lmanda
+![alt text](image-19.png)
 
 
-### imagen ruta y attach autorize
+![alt text](image-20.png)
 
 
 Tambien podemos colocar una url por diferente con nuestros dominios en custom domain names
 
 
-### imagen custom con domain names
+![alt text](image-21.png)
 
 
 ### 3.3 Pruebas de API
@@ -101,16 +102,14 @@ Tambien podemos colocar una url por diferente con nuestros dominios en custom do
 Vamos a probar nuestra API, podemos hacerlo de muchas formas, con postman, imsonia, etc
 
 
-Pero la vamos a probar usando el fetch nativo en consola para confirmar su funcionamiento base, 
+Vamos a hacerlo con Postman
 
-Vamos a ir a un navegador, abrir la consola de desarrollador y ejecutar el siguiente codigo
-```
+colocamos nuestra ulr base, la nueva ruta y probamos
 
-fetch()
-```
+![alt text](image-22.png)
 
 
-#### imagen post usando fetch a Aws api gateway
+como vemos esta funcionando
 
 
 
@@ -152,19 +151,25 @@ Veremos algo como lo siguiente (puede tardar algunos segundos en la creación)
 
 En la base de datos
 
-Ahora vamos a modificar nuestra peticion fetch para agregar valores a nuestra base de datos
+Ahora vamos a modificar nuestra peticion para agregar valores a nuestra base de datos, agregamos el siguiente objeto en su body
 
 
 ```
-
-fetch()
+  {
+    "title":"Aws lambdas",
+    "author": "Santiago Sanchez"
+  }
 ```
+![alt text](image-24.png)
 
+y vamos a modificar nuestra lambda para confirmar que funciona
 
-Y comprobaremos que en lamnda en el event, venga esa informacion
+![alt text](image-23.png)
 
+Y comprobaremos que en lamnda en el event, venga esa informacion confirmando un **body**
 
-#### imagen retorno lambda
+![alt text](image-25.png)
+
 
 
 Ahora modificaremos el codigo del lambda para poder agregar un valor cuando nos llegue
@@ -207,8 +212,7 @@ export const handler = async (event, context) => {
 
 ```
 
-
-El codigo anterior nos permitira modificar nuestra base de datos con un post
+El codigo anterior nos permitira modificar nuestra base de datos con un post... si tuvieramos permisos, como se ve en la siguiente imagen, vamos a modificarlos
 
 ### 3.6 Permisos y Logs
 
@@ -226,9 +230,40 @@ Vamos a registros y grupos de registros (logs groups)
 Aca podemos ver el error que tenemos
 
 
-Ahora en cuanto a permisos debemos ir a nuestro lambda
+Ahora en cuanto a permisos debemos ir a nuestro lambda, la pestaña de configuracion y permisos
 
-aca podemos ver su rol
+![alt text](image-26.png)
 
-#### imagen rol  lambda
+Vamos a ir a nuestro rol y le damos click
+
+![alt text](image-27.png)
+
+
+Ya en nuestro rol vamos primero a mirar los permisos y luego a agregar un permiso(policy)
+Vamos a crear una nueva politica de permisos (principio de minimo acceso)
+
+![alt text](image-30.png)
+
+Vamos a escoger el servicio y los permisos y donde aplicarian y por ultimo vamos a agregar el ARN de nuestra tabla
+
+
+![alt text](image-31.png)
+
+En ARN nos traeremos el ARN de nuestra tabla en dynamo (navegamos a ella en otra pestaña) y los campos se ajustaran solos
+
+
+![alt text](image-33.png)
+
+![alt text](image-34.png)
+
+
+
+
+
+
+
+
+
+
+
 ## 4. Eliminación
