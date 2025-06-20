@@ -341,4 +341,5 @@ Y buala tenemos nuestra primera operacion en nuestra base de datos!
 
 ### 4.4 CloudWatch Log groups
 
-![alt text](image-44.png)
+![image](https://github.com/user-attachments/assets/c7b1c6a3-d899-4f8e-be3d-b6f28060de2d)
+
