@@ -89,7 +89,8 @@ Vamos a colocar nuestra API gateway con una integracion, que va a ser con nuestr
 
 Luego escogemos la accion  que sera **post** y  la ruta que sera la siguiente */books*, y escogemos en target a nuestra lambda creada
 
-![alt text](image-16.png)
+![image](https://github.com/user-attachments/assets/b314157e-c9ce-42bb-9c23-3b38cc996c2e)
+
 
 
 Dejamos los stages en **$default**
