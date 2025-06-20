@@ -259,9 +259,13 @@ Vamos a ir a nuestro rol y le damos click
 
 
 Ya en nuestro rol vamos primero a mirar los permisos y luego a agregar un permiso(policy)
-Vamos a crear una nueva politica de permisos (principio de minimo acceso)
+Vamos a crear una nueva politica de permisos (principio de minimo acceso) en el Servicio de **IAM** y en Politicas vamos a crear una nueva
 
-![alt text](image-30.png)
+![image](https://github.com/user-attachments/assets/2127ad1e-f04b-45cd-8599-767573e0b365)
+
+
+
+
 
 Vamos a escoger el servicio y los permisos y donde aplicarian y por ultimo vamos a agregar el ARN de nuestra tabla
 
@@ -291,6 +295,8 @@ Ahora colocaremos un nombre a la policy *CreateBookPolicy* y  crearemos el book 
 
 
 Luego la ligaremos a nuestro policy , buscaremos, colocamos si nombre, la agregamos 
+![image](https://github.com/user-attachments/assets/1f536113-7cf9-48fd-a1df-8a1638de0302)
+
 
 
 ![alt text](image-37.png)
