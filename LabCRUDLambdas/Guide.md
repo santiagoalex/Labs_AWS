@@ -35,6 +35,9 @@ Luego clickeamos en crear funcion
 
 Deberiamos poder ver algo como esto
 
+![image](https://github.com/user-attachments/assets/628a6159-ffe8-4f8a-8e2e-6d59151304c8)
+
+
 
 ### 3.2 Disparador de Lambda
 
@@ -57,7 +60,8 @@ Le daremos click en crear una API
 
 Vamos a seleccionar API http
 
-![alt text](image-6.png)
+![image](https://github.com/user-attachments/assets/c5aacdae-539d-4e2b-bc0f-40f0caa628a7)
+
 
 
 Ahora vamos a escoger la integracion, que va a ser con nuestra lambda por eso seleccionamos lambda y escogemos la nuestra
