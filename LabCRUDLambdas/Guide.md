@@ -1,12 +1,25 @@
 # Creación de CRUD con lambda, Api gateway y DynamoDB
 
-## 1. Arquitectura
+## 1. Arquitectura!
+
+[Lab_lambda-crud](https://github.com/user-attachments/assets/d8aed8fc-fd72-4c22-a17e-c82d4ef8b737)
+
 
 ## 2. Definicion
 
+Vamos a tener una aproximacion a una base de datos basica usando aws lambda empezando por el metodo POST
+
 ### 2.1 Servicios
 
+- CloudWatch:  nos permite llevar registros en aws de lo que configuremos para la misma
+- Lambda: capacidad de computo en minutos
+- DynamoDB: una base de datos no relacional para usar cuando queramps
+- IAM: manejador de roles permisos y accesos
+- API Gateway: nos permite consumir enpoints para integrar con diferentes necesidades
+
 ### 2.2 Costo
+
+Vamos a cancelar todos nuestros servicios entonces virtualmente no tendra costo.
 
 ## 3. Proceso
 
