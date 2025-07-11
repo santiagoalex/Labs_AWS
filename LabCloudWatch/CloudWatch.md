@@ -258,7 +258,8 @@ En esta consola podemos ver toda la informacion que hayamos programado para segu
 Debemos borrar lo siguiente y estar seguros que se eliminaron:
 - Alarma de CloudWatch 
 - Instancia EC2 
-- Tema de SNS
+- Tema de SNS 
+- Subscripcion SNS
 
 #### En CloudWatch 
 
